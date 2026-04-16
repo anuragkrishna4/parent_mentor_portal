@@ -34,4 +34,4 @@ Universities often fail to keep parents informed about their child's attendance 
 
 - **Admin** - Manages students, subjects, mentor accounts, and bulk parent registration
 - **Mentor** - Uploads attendance CSVs/Excel files and resets data at semester end
-- **Parent** - Logs in with phone number and views their child's subject-wise attendance report
+- **Parent** - Logs in with phone number and views their child's subject-wise attendance report.
