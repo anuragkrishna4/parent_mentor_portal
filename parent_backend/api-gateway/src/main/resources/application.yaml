@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+
+        - id: mentor-service
+          uri: lb://MENTOR-SERVICE
+          predicates:
+            - Path=/mentor/**
+
+        - id: parent-service
+          uri: lb://PARENT-SERVICE
+          predicates:
+            - Path=/parent/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
